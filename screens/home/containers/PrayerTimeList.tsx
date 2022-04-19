@@ -10,7 +10,7 @@ interface Props {
 function PrayerTimeList({ location }: Props) {
   const { data, error, isFetching } = usePrayerTimes(location);
   const times = React.useMemo(() => {
-    return data.results.datetime[0].times;
+    return data?.results.datetime[0].times;
   }, [data]);
 
   if (error) return <Text> 😭 Quelques problemes serveur !</Text>;

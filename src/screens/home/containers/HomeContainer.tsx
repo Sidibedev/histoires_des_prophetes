@@ -44,7 +44,7 @@ export default function HomeContainer() {
               h={170}
               resizeMode="cover"
               borderRadius={20}
-              source={require('../../../assets/images/cover1.png')}
+              source={require('../../../../assets/images/cover1.png')}
             />
             <AudioList title={'Muhammad (PSL)'} />
             <AudioList title="Les autres prophetes" />
